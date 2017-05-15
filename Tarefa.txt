@@ -1,0 +1,19 @@
+Detalhamento da tarefa:
+
+Escrever um programa (usando OBRIGATORIAMENTE a estrutura de State/Solver passada em aula) para resolver problemas de empacotamento.
+
+O empacotamento consiste em empacotar três tipos de itens a, b e c em uma caixa retangular, de dimensões n (linhas) por m (colunas). O estado inicial, portanto, é uma caixa vazia com as dimensões especificadas. O item a tem tamanho 2x2, o item b tem tamanho 1x2 (podendo ser rotacionado para 2x1) e o item c tem tamanho 1x3 (podendo ser rotacionado para 3x1). O programa deve então encontrar (ou não) um empacotamento completo da caixa (sem espaços vazios), em que nenhum dos três itens ocupe mais do que 45% do volume da caixa, e que nenhum deles ocupe menos de 20% deste volume. Por exemplo, esta seria uma configuração válida para uma caixa com dimensões n=3 e m=6:
+
+aaaabb
+aaaabb
+cccccc
+
+A Tarefa B consiste em escrever um programa (usando OBRIGATORIAMENTE a estrutura de State/Solver passada em aula) para percorrer um labirinto qualquer, especificado como uma matriz de dimensões n (linhas) por m (colunas).
+
+A matriz deve ser fornecida já preenchida para a o primeiro método solver(), que deverá percorrer o labirinto usando backtracking, indo do ponto inicial 'I' até o final 'F'. Uma vez encontrada a saída, o algoritmo deve parar. Se não houver saída, o programa precisa também identificar essa situação. Por exemplo, um labirinto inicial poderia ser especificado da seguinte forma:
+
+##I###################
+#..#........#........#
+#.##.#.######.#..##..#
+#....#........#......F
+######################
